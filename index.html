@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b10">
+  <title>GROW.md — 把失败，写成下一次的胜利。</title>
+  <meta name="description" content="Kessoku Works 的实时终端战斗游戏。扮演 AI Agent，挑战 Boss、编写 Skill，把经验写进 GROW.md。下载 Mac / Windows 中英双语版。">
+  <meta property="og:title" content="GROW.md — Learn. Write. Fight again.">
+  <meta property="og:description" content="A terminal battle game by Kessoku Works. Every lesson becomes your next move.">
+  <meta property="og:image" content="https://nikolastarx.github.io/grow-md/assets/battle.webp">
+  <meta property="og:url" content="https://nikolastarx.github.io/grow-md/">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preload" as="image" href="assets/workstation.webp">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文 / Skip to content</a>
+  <header class="nav wrap">
+    <a class="brand" href="#" aria-label="GROW.md 首页"><span class="prompt">&gt;_</span> GROW.md</a>
+    <span class="studio">by Kessoku Works</span>
+    <nav aria-label="Main navigation">
+      <a href="#game" data-i18n="navGame">游戏</a>
+      <a href="#download" data-i18n="navDownload">下载</a>
+      <button class="language" id="language" aria-label="Switch to English">EN</button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="workstation" aria-hidden="true"><img src="assets/workstation.webp" alt="" width="1672" height="941"><img class="kernel" src="assets/kernel.png" alt="" width="512" height="512"><span class="screen-glow"></span><i class="steam one"></i><i class="steam two"></i></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> KERNEL ONLINE <span class="dim">// 001</span></p>
+        <h1 id="hero-title">GROW<span>.md</span><b class="cursor" aria-hidden="true">_</b></h1>
+        <h2 data-i18n="hero">把失败，写成<br>下一次的胜利。</h2>
+        <p class="hero-description" data-i18n="intro">你是一名 AI Agent。<br>用命令出招，用经验改写自己。</p>
+        <div class="hero-actions"><a class="button primary" href="#download"><span>&gt;_</span> <span data-i18n="download">下载游戏</span><span class="arrow">↓</span></a><button class="watch" data-watch><span class="play-icon">▶</span><span data-i18n="watch">30 秒实机</span></button></div>
+        <p class="platforms">macOS / Windows <span>·</span> <span data-i18n="bilingual">中英双语 · 含配音</span></p>
+      </div>
+      <div class="hero-bottom"><span>LEARN. WRITE. FIGHT AGAIN.</span><a href="#game" aria-label="探索游戏 / Explore the game">SCROLL TO INSPECT ↓</a></div>
+    </section>
+    <section class="game wrap" id="game" aria-labelledby="game-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / REAL-TIME TERMINAL BATTLES</p><h2 id="game-title" data-i18n="battleTitle">光会打字，可赢不了。</h2></div><p data-i18n="battleDesc">观察破绽，锁定目标。<br>你输入的每一行，都在战场上发生。</p></div>
+      <button class="battle-window" data-watch aria-label="播放 30 秒游戏实录 / Play gameplay reel">
+        <span class="window-top"><span><i></i><i></i><i></i></span><span>kernel@closeai:~</span><span>LIVE / 1×</span></span>
+        <img src="assets/battle.webp" alt="Kernel 在服务器大厅中与 GTP 对战，场上显示目标和架构信息" width="1600" height="488" loading="lazy">
+        <span class="battle-bottom"><span class="command">&gt; inspect <span class="dim">→</span> target <span class="dim">→</span> lock <span class="dim">→</span> attack</span><span class="play-label">▶ <span data-i18n="play">观看实机</span></span></span>
+      </button>
+      <div class="battle-notes"><span data-i18n="note1">实时战斗 / 不是回合制</span><span data-i18n="note2">MCP 工具 / 组合你的打法</span><span data-i18n="note3">Boss 机制 / 见招拆招</span></div>
+    </section>
+    <section class="growth wrap" id="growth" aria-labelledby="growth-title">
+      <div class="growth-copy"><p class="eyebrow">02 / EXPERIENCE IS YOUR SOURCE CODE</p><h2 id="growth-title" data-i18n="growthTitle">成长，<br>是你写下的东西。</h2><p data-i18n="growthDesc">把亲手打过的操作编成 Skill。<br>让下一次出招，带着上一次的经验。</p><div class="steps" role="tablist" aria-label="成长流程 / Growth loop"><button role="tab" id="tab-observe" aria-controls="terminal-panel" aria-selected="true" data-step="0"><span>01</span><b data-i18n="observe">观察</b></button><button role="tab" id="tab-skill" aria-controls="terminal-panel" aria-selected="false" tabindex="-1" data-step="1"><span>02</span><b data-i18n="write">编写 Skill</b></button><button role="tab" id="tab-grow" aria-controls="terminal-panel" aria-selected="false" tabindex="-1" data-step="2"><span>03</span><b data-i18n="grow">留下经验</b></button></div><p class="interactive-hint" data-i18n="hint">↑ 点一下，看看你的成长循环</p></div>
+      <div class="terminal" id="terminal-panel" role="tabpanel" aria-labelledby="tab-observe" tabindex="0"><div class="terminal-top"><span id="terminal-file">battle / inspect</span><span class="terminal-status" id="terminal-status">OBSERVING</span></div><pre id="terminal-code"></pre><div class="terminal-footer"><pre class="ascii" aria-hidden="true">   .--------.
+  /|  ^  ^  |
+ | |   __   |
+ | '--------'
+ '   | [:] |
+     /    \
+   _/      \_</pre><div><span class="eyebrow">KERNEL</span><p id="terminal-caption"></p><span class="meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div></div></div>
+    </section>
+    <section class="skill-strip wrap"><div><span class="eyebrow">YOUR SKILL. YOUR NEXT MOVE.</span><h2 data-i18n="skillTitle">这一次，用自己的招式。</h2><p data-i18n="skillDesc">编辑、保存、调用。<br>把一连串操作，变成一条命令。</p><span class="call-command">&gt; reacquire<span class="cursor" aria-hidden="true">_</span></span></div><img src="assets/skill.webp" alt="游戏中的 Skill 编辑器，展示 inspect、target、lock、attack 四个步骤" loading="lazy" width="1100" height="605"></section>
+    <section class="download wrap" id="download" aria-labelledby="download-title"><p class="eyebrow"><span class="status-dot"></span> READY WHEN YOU ARE.</p><h2 id="download-title" data-i18n="ready">下一行，由你来写。</h2><a class="button primary download-link" href="https://github.com/NikolaStarx/grow-md/releases/download/v0.2.1-bilingual.2/GROW-game-executable.zip"><span>&gt;_</span><span data-i18n="downloadBoth">下载 GROW.md</span><span class="arrow">↓</span></a><p class="download-meta" data-i18n="package">Mac + Windows · ZIP / 767 MB · v0.2.1</p><p class="download-note" data-i18n="downloadNote">完整解压，按包内 README 启动。无需连接在线 AI 服务。</p><a class="release-link" href="https://github.com/NikolaStarx/grow-md/releases/tag/v0.2.1-bilingual.2" data-i18n="release">版本与启动说明 ↗</a></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#">GROW.md</a><span>A GAME BY <b>Kessoku Works</b></span><span>© 2026 Kessoku Works</span></footer>
+  <dialog id="video-dialog" aria-labelledby="video-title"><div class="dialog-header"><h2 id="video-title" data-i18n="videoTitle">GROW.md / 30 秒开发实录</h2><button id="close-video" aria-label="关闭视频 / Close video">✕</button></div><video id="gameplay-video" controls playsinline preload="none" poster="assets/video-poster.jpg"><source src="assets/gameplay.mp4" type="video/mp4"><p><a href="assets/gameplay.mp4">Download gameplay video</a></p></video></dialog>
+</body>
+</html>
