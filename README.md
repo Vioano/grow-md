@@ -16,7 +16,7 @@ GitHub Pages serves the `main` branch, repository root. Push site updates to thi
 
 The two imagegen mockups in `design/` were produced before implementation. See `design/brand-spec.md` for the chosen direction and `design/prompts.json` for the exact built-in imagegen prompts. Mockups are design studies, not gameplay screenshots.
 
-Production artwork, icon, character and screenshots come from GROW.md, by Kessoku Works. Screenshots are cropped and compressed for the web. The 30-second reel is development gameplay footage. Download points to desktop version `0.2.1-bilingual.2`, built from game revision `0ac702bd10c03799e9e5c3c725921a8afe5e7212`.
+Production artwork, icon, character and screenshots come from GROW.md, by Kessoku Works. Screenshots are cropped and compressed for the web. The 30-second reel is development gameplay footage. The primary download is **GROW.md 1.2.1 rc4 Audience for macOS**, mirrored unchanged from the roadshow delivery: runtime `af163e2cac2746578c1ff9d11a4ecf298c1e1475`, ZIP SHA-256 `b07100d7838dd0d94c958cb8e7ca9b6842a5d72b7b57201d7c23d2dbdd13f367` (270,162,616 bytes). Public release: `v1.2.1-roadshow-rc4-audience`. The separate Windows link retains the previous v1.2 stable bundle under the legacy `v0.2.1-bilingual.2` tag; it is not the rc4 roadshow build. Release notes document macOS launch instructions and verification limits.
 
 This public repository contains the introduction website and promotional assets only. It is not the game source release, and publishing these assets does not grant a general reuse license. Game and third-party asset notices are included in the game download.
 
